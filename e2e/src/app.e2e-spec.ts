@@ -1,3 +1,5 @@
+
+// this is a component for end to end test
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 

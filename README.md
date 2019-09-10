@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# decorator 
+
+In angular we use decorator and attach it to a class and make that class a component
+
+# Componetnt
+First use of component and showing them dynamically on the web
+
+# service
+we have created a service and will use it
