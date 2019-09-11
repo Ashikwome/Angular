@@ -34,4 +34,18 @@ In angular we use decorator and attach it to a class and make that class a compo
 First use of component and showing them dynamically on the web
 
 # service
-we have created a service and will use it
+we have created a service and will use it in our component class
+
+# dependency Injection
+for this we will have to register our dependencies on the app module for example checkout the provider class in app module.ts
+
+# shortcut code for generating file using ANGULAR cli
+create project = ng new 
+install angular-cli = npm install -g @angular/cli
+serve = ng serve
+host = ng host
+creating new component = ng g c newcomponentp[name]
+creating services = ng g s emai[name]
+
+# Injectable
+we will need this only when we have dependencies in its constructor

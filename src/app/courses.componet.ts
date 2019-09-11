@@ -1,3 +1,4 @@
+import { CoursesServise } from './courses.service';
 import { Component } from '@angular/core';
 
 // decorator
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
   // we can also call a method in here
   // template: '<h2>{{ getTitle() }}</h2>'
 
-  template: `<h1>{{Title}}</h1>
+  template: `<h1>{{title}}</h1>
   <ul>
   <li *ngFor = "let course of courses"> {{course}} </li>
   </ul>
@@ -26,5 +27,11 @@ import { Component } from '@angular/core';
   // }
 
   // Logic for calling an HTTP service
+
+  constructor(service: CoursesServise) {
+    // we selecting a dependency for this part with construstor
+   // so whenever we update or modify anything angular will change it automatically for us
+    this.courses = service.getCourses();
+  }
 
   }
