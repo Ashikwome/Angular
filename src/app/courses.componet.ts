@@ -14,7 +14,10 @@ import { Component } from '@angular/core';
   <ul>
   <li *ngFor = "let course of courses"> {{course}} </li>
   </ul>
-  `
+  <button (click)="onSave($event)"> Save </button> `
+
+  //  ☢️ [style.backgroundColor] = "isActive ? 'blue' : 'white' " ☢️
+  //  💯this is the code for button is a fair example of style binding💯
 })
 
 // export is for angular to see this class
@@ -25,13 +28,16 @@ import { Component } from '@angular/core';
   // getTitle(){
   //   return this.title;
   // }
+  onSave($event) {
+    console.log("Button is Clicked", $event);
+  }
 
   // Logic for calling an HTTP service
-
   constructor(service: CoursesServise) {
     // we selecting a dependency for this part with construstor
    // so whenever we update or modify anything angular will change it automatically for us
     this.courses = service.getCourses();
   }
+
 
   }

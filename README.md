@@ -46,6 +46,12 @@ serve = ng serve
 host = ng host
 creating new component = ng g c newcomponentp[name]
 creating services = ng g s emai[name]
+npm install bootstrap --save *adding bootsrap
 
 # Injectable
 we will need this only when we have dependencies in its constructor
+
+# DOM
+https://www.w3schools.com/jsref/dom_obj_style.asp
+
+DOM style objects.
